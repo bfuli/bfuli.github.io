@@ -171,7 +171,6 @@
     "method": "get",
     "parserElementEntity": {
       "listElement": {
-        "position": "body .row > .col-md-6 > .list-unstyled"
         "position": "#wall .row > .search-list > .search-item"
       },
       "fileType": {
