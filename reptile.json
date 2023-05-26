@@ -156,5 +156,70 @@
         }
       }
     }
+  },
+  "磁力蜘蛛": {
+    "pageStart": 1,
+    "defaultUrl": "http://www.btmovi.email/so/KEY_PAGE.html",
+    "sortUrl": {
+    	"默认": "http://www.btmovi.email/so/KEY_PAGE.html"
+      "时间": "http://www.btmovi.email/so/KEY_time_PAGE.html",
+      "热门": "http://www.btmovi.email/so/KEY_hits_PAGE.html",
+      "大小": "http://www.btmovi.email/so/KEY_size_PAGE.html"
+    },
+    "pageParam": "page",
+    "queryKey": "",
+    "method": "get",
+    "parserElementEntity": {
+      "listElement": {
+        "position": "body .row > .col-md-6 > .list-unstyled"
+        "position": "#wall .row > .search-list > .search-item"
+      },
+      "fileType": {
+        "position": ".item-bar > span",
+        "index": 0
+      },      
+      "fileName": {
+        "position": ".item-title > h3 >a"
+      },
+      "fileSize": {
+        "position": ".item-bar > span > b",
+        "index": 1
+      },
+      "recordTime": {
+        "position": ".item-bar > span > b",
+        "index": 0
+      },
+      "fileHot": {
+        "position": ".item-bar > span > b",
+        "index": 2
+      },
+      "nextUrl": {
+        "position": ".item-title > h3 > a",
+        "index": -1,
+        "isText": false,
+        "attrName": "href"
+      },
+      "otherInfo": {
+        "最近下载时间": {
+          "position": "li > a",
+          "index": -1,
+          "isText": true,
+          "attrName": ""
+        }
+      }
+
+    },
+    "nextRequestEntity": {
+      "origin": "http://www.btmovi.email",
+      "append": "",
+      "parserElementEntity": {
+        "downloadUrl": {
+          "position": "#m_link",
+          "index": -1,
+          "isText": false,
+          "attrName": "value"
+        }
+      }
+    }
   }
 }
