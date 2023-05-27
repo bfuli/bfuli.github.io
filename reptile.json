@@ -158,10 +158,14 @@
     }
   },
   "磁力蜘蛛": {
+    "isRestful": true,
     "pageStart": 1,
-    "defaultUrl": "http://www.btmovi.email/so/KEY_PAGE.html",
+    "headers": {
+      "referer": "url"
+    },
+    "defaultUrl": "http://www.btmovi.email/so/KEY_rel_PAGE.html",
     "sortUrl": {
-    	"默认": "http://www.btmovi.email/so/KEY_PAGE.html"
+      "默认": "http://www.btmovi.email/so/KEY_rel_PAGE.html",
       "时间": "http://www.btmovi.email/so/KEY_time_PAGE.html",
       "热门": "http://www.btmovi.email/so/KEY_hits_PAGE.html",
       "大小": "http://www.btmovi.email/so/KEY_size_PAGE.html"
@@ -176,7 +180,7 @@
       "fileType": {
         "position": ".item-bar > span",
         "index": 0
-      },      
+      },
       "fileName": {
         "position": ".item-title > h3 >a"
       },
@@ -210,6 +214,9 @@
     },
     "nextRequestEntity": {
       "origin": "http://www.btmovi.email",
+      "headers": {
+        "referer": "url"
+      },
       "append": "",
       "parserElementEntity": {
         "downloadUrl": {
