@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "message": "",
   "source": {
     "搜番": {
@@ -227,6 +227,62 @@
             "index": -1,
             "isText": false,
             "attrName": "value"
+          }
+        }
+      }
+    },
+    "磁力天堂": {
+      "isRestful": true,
+      "pageStart": 1,
+      "headers": {
+        "referer": "https://pqhtbuufehuxxlfpcrmtqvqjev.life/"
+      },
+      "defaultUrl": "https://pqhtbuufehuxxlfpcrmtqvqjev.life/search/KEY_ctime_PAGE.html",
+      "sortUrl": {
+        "收录日期": "https://pqhtbuufehuxxlfpcrmtqvqjev.life/search/KEY_ctime_PAGE.html",
+        "热度指数": "https://pqhtbuufehuxxlfpcrmtqvqjev.life/search/KEY_click_PAGE.html",
+        "文件大小": "https://pqhtbuufehuxxlfpcrmtqvqjev.life/search/KEY_length_PAGE.html"
+      },
+      "pageParam": "page",
+      "queryKey": "",
+      "method": "get",
+      "parserElementEntity": {
+        "listElement": {
+          "position": ".row > .col-md-8 >.panel"
+        },
+        "fileName": {
+          "position": ".panel-body > h5 > a"
+        },
+        "recordTime": {
+          "position": ".panel-body > table > tbody > tr> td>span>b",
+          "index": 0
+        },
+        "fileSize": {
+          "position": ".panel-body > table > tbody > tr> td>span>b",
+          "index": 1
+        },
+        "fileHot": {
+          "position": ".panel-body > table > tbody > tr> td>span>b",
+          "index": 2
+        },
+        "nextUrl": {
+          "position": ".panel-body > h5 > a",
+          "index": -1,
+          "isText": false,
+          "attrName": "href"
+        },
+        "otherInfo": {
+        }
+      },
+      "nextRequestEntity": {
+        "origin": "https://pqhtbuufehuxxlfpcrmtqvqjev.life",
+        "headers": {
+          "referer": "url"
+        },
+        "append": "",
+        "parserElementEntity": {
+          "downloadUrl": {
+            "position": "#MagnetLink"
           }
         }
       }
