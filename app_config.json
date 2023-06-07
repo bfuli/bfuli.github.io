@@ -1,5 +1,5 @@
 {
   "isTest": false,
-  "downloadLimit": 10,
-  "searchLimit": 10
+  "downloadLimit": 1000,
+  "searchLimit": 1000
 }
