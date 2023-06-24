@@ -1,5 +1,5 @@
 {
-    "version": 3,
+    "version": 1,
     "message": "",
     "source": {
         "搜番": {
@@ -213,43 +213,43 @@
             "isRestful": true,
             "pageStart": 1,
             "headers": {
-                "referer": "url"
+                "referer": ""
             },
-            "defaultUrl": "http://www.btmovi.email/so/KEY_rel_PAGE.html",
+            "defaultUrl": "http://www.btmovi.blog/so/KEY_rel_PAGE.html",
             "sortUrl": {
-                "默认": "http://www.btmovi.email/so/KEY_rel_PAGE.html",
-                "时间": "http://www.btmovi.email/so/KEY_time_PAGE.html",
-                "热门": "http://www.btmovi.email/so/KEY_hits_PAGE.html",
-                "大小": "http://www.btmovi.email/so/KEY_size_PAGE.html"
+                "时间": "http://www.btmovi.blog/so/KEY_time_PAGE.html",
+                "热门": "http://www.btmovi.blog/so/KEY_hits_PAGE.html",
+                "大小": "http://www.btmovi.blog/so/KEY_size_PAGE.html"
             },
             "pageParam": "page",
             "queryKey": "",
+            "queryBody": {},
             "method": "get",
             "parserElementEntity": {
                 "listElement": {
-                    "position": "#wall .row > .search-list > .search-item"
-                },
-                "fileType": {
-                    "position": ".item-bar > span",
-                    "index": 0
+                    "position": "#wall > .row>.search-list>.search-item"
                 },
                 "fileName": {
-                    "position": ".item-title > h3 >a"
+                    "position": ".item-title>h3>a"
                 },
                 "fileSize": {
-                    "position": ".item-bar > span > b",
+                    "position": ".item-bar >span > b",
                     "index": 1
                 },
                 "recordTime": {
-                    "position": ".item-bar > span > b",
-                    "index": 0
+                    "position": ".item-bar >span > b",
+                    "index": 0,
+                    "isText": true,
+                    "attrName": ""
                 },
                 "fileHot": {
-                    "position": ".item-bar > span > b",
-                    "index": 2
+                    "position": ".item-bar >span > b",
+                    "index": 2,
+                    "isText": true,
+                    "attrName": ""
                 },
                 "nextUrl": {
-                    "position": ".item-title > h3 > a",
+                    "position": ".item-title>h3>a",
                     "index": -1,
                     "isText": false,
                     "attrName": "href"
@@ -264,10 +264,10 @@
                 }
             },
             "nextRequestEntity": {
-                "origin": "http://www.btmovi.email",
                 "headers": {
                     "referer": "url"
                 },
+                "origin": "http://www.btmovi.blog",
                 "append": "",
                 "parserElementEntity": {
                     "downloadUrl": {
@@ -275,61 +275,6 @@
                         "index": -1,
                         "isText": false,
                         "attrName": "value"
-                    }
-                }
-            }
-        },
-        "磁力天堂": {
-            "isRestful": true,
-            "pageStart": 1,
-            "headers": {
-                "referer": "https://rmhuxl6pg5lz43tv.xyz/"
-            },
-            "defaultUrl": "https://rmhuxl6pg5lz43tv.xyz/search/KEY_ctime_PAGE.html",
-            "sortUrl": {
-                "收录日期": "https://rmhuxl6pg5lz43tv.xyz/search/KEY_ctime_PAGE.html",
-                "热度指数": "https://rmhuxl6pg5lz43tv.xyz/search/search/KEY_click_PAGE.html",
-                "文件大小": "https://rmhuxl6pg5lz43tv.xyz/search/search/KEY_length_PAGE.html"
-            },
-            "pageParam": "page",
-            "queryKey": "",
-            "method": "get",
-            "parserElementEntity": {
-                "listElement": {
-                    "position": ".row > .col-md-8 >.panel"
-                },
-                "fileName": {
-                    "position": ".panel-body > h5 > a"
-                },
-                "recordTime": {
-                    "position": ".panel-body > table > tbody > tr> td>span>b",
-                    "index": 0
-                },
-                "fileSize": {
-                    "position": ".panel-body > table > tbody > tr> td>span>b",
-                    "index": 1
-                },
-                "fileHot": {
-                    "position": ".panel-body > table > tbody > tr> td>span>b",
-                    "index": 2
-                },
-                "nextUrl": {
-                    "position": ".panel-body > h5 > a",
-                    "index": -1,
-                    "isText": false,
-                    "attrName": "href"
-                },
-                "otherInfo": {}
-            },
-            "nextRequestEntity": {
-                "origin": "https://rmhuxl6pg5lz43tv.xyz",
-                "headers": {
-                    "referer": "url"
-                },
-                "append": "",
-                "parserElementEntity": {
-                    "downloadUrl": {
-                        "position": "#MagnetLink"
                     }
                 }
             }
