@@ -1,291 +1,338 @@
 {
-  "version": 2,
-  "message": "",
-  "source": {
-    "搜番": {
-      "pageStart": 1,
-      "headers": {
-        "referer": "https://cdn.sofan.one:65533/?host=cr.fan55.top&v=1"
-      },
-      "defaultUrl": "https://cdn.sofan.one:65533/s?word=",
-      "sortUrl": {
-        "相关度": "https://cdn.sofan.one:65533/s?word=",
-        "文件大小": "https://cdn.sofan.one:65533/s?sort=size&word=",
-        "收录时间": "https://cdn.sofan.one:65533/s?sort=date&word=",
-        "下载次数": "https://cdn.sofan.one:65533/s?sort=viewnum&word="
-      },
-      "pageParam": "page",
-      "queryKey": "",
-      "queryBody": {
-
-      },
-      "method": "get",
-      "parserElementEntity": {
-        "listElement": {
-          "position": "body .row > .col-md-6 > .list-unstyled"
+    "version": 2,
+    "message": "",
+    "source": {
+        "搜番": {
+            "pageStart": 1,
+            "headers": {
+                "referer": "https://cdn.sofan.one:65533/?host=cr.fan55.top&v=1"
+            },
+            "defaultUrl": "https://cdn.sofan.one:65533/s?word=",
+            "sortUrl": {
+                "相关度": "https://cdn.sofan.one:65533/s?word=",
+                "文件大小": "https://cdn.sofan.one:65533/s?sort=size&word=",
+                "收录时间": "https://cdn.sofan.one:65533/s?sort=date&word=",
+                "下载次数": "https://cdn.sofan.one:65533/s?sort=viewnum&word="
+            },
+            "pageParam": "page",
+            "queryKey": "",
+            "queryBody": {},
+            "method": "get",
+            "parserElementEntity": {
+                "listElement": {
+                    "position": "body .row > .col-md-6 > .list-unstyled"
+                },
+                "fileName": {
+                    "position": "li > h3 > a"
+                },
+                "fileSize": {
+                    "position": "li > span",
+                    "index": 0
+                },
+                "fileNums": {
+                    "position": "li > span",
+                    "index": 1,
+                    "isText": true,
+                    "attrName": ""
+                },
+                "recordTime": {
+                    "position": "li > span",
+                    "index": 2,
+                    "isText": true,
+                    "attrName": ""
+                },
+                "fileHot": {
+                    "position": "li > span",
+                    "index": 3,
+                    "isText": true,
+                    "attrName": ""
+                },
+                "nextUrl": {
+                    "position": "li > a",
+                    "index": -1,
+                    "isText": false,
+                    "attrName": "href"
+                },
+                "otherInfo": {
+                    "最近下载时间": {
+                        "position": "li > a",
+                        "index": -1,
+                        "isText": true,
+                        "attrName": ""
+                    }
+                }
+            },
+            "nextRequestEntity": {
+                "headers": {
+                    "referer": "https://cr.fan55.top/"
+                },
+                "origin": "https://cdn.sofan.one:65533",
+                "append": "?host=cr.fan55.top&v=1",
+                "parserElementEntity": {
+                    "downloadUrl": {
+                        "position": "#magnet-link",
+                        "index": -1,
+                        "isText": true,
+                        "attrName": ""
+                    }
+                }
+            }
         },
-        "fileName": {
-          "position": "li > h3 > a"
+        "BT联盟": {
+            "pageStart": 1,
+            "headers": {
+                "referer": "https://cdn.btlm.top:65533/?host=cy.btlm.pro&v=1"
+            },
+            "defaultUrl": "https://cdn.btlm.top:65533/s?word=",
+            "sortUrl": {
+                "相关度": "https://cdn.btlm.top:65533/s?word=",
+                "文件大小": "https://cdn.btlm.top:65533/s?sort=size&word=",
+                "收录时间": "https://cdn.btlm.top:65533/s?sort=date&word=",
+                "下载次数": "https://cdn.btlm.top:65533/s?sort=viewnum&word="
+            },
+            "pageParam": "page",
+            "queryKey": "",
+            "queryBody": {},
+            "method": "get",
+            "parserElementEntity": {
+                "listElement": {
+                    "position": "body .row > .col-md-6 > .list-unstyled"
+                },
+                "fileName": {
+                    "position": "li > h2 > a"
+                },
+                "fileSize": {
+                    "position": "li > span",
+                    "index": 0
+                },
+                "fileNums": {
+                    "position": "li > span",
+                    "index": 1,
+                    "isText": true,
+                    "attrName": ""
+                },
+                "recordTime": {
+                    "position": "li > span",
+                    "index": 2,
+                    "isText": true,
+                    "attrName": ""
+                },
+                "fileHot": {
+                    "position": "li > span",
+                    "index": 3,
+                    "isText": true,
+                    "attrName": ""
+                },
+                "nextUrl": {
+                    "position": "li > a",
+                    "index": -1,
+                    "isText": false,
+                    "attrName": "href"
+                },
+                "otherInfo": {
+                    "最近下载时间": {
+                        "position": "li > a",
+                        "index": -1,
+                        "isText": true,
+                        "attrName": ""
+                    }
+                }
+            },
+            "nextRequestEntity": {
+                "headers": {
+                    "referer": "https://cdn.btlm.top:65533/"
+                },
+                "origin": "https://cdn.btlm.top:65533",
+                "append": "?host=cy.btlm.pro&v=1",
+                "parserElementEntity": {
+                    "downloadUrl": {
+                        "position": "#magnet-link",
+                        "index": -1,
+                        "isText": true,
+                        "attrName": ""
+                    }
+                }
+            }
         },
-        "fileSize": {
-          "position": "li > span",
-          "index": 0
+        "滴滴磁力": {
+            "isRestful": true,
+            "pageStart": 1,
+            "headers": {
+                "referer": "https://if64krpe1pcaivt0.xyz/"
+            },
+            "defaultUrl": "https://if64krpe1pcaivt0.xyz/search/KEY_ctime_PAGE.html",
+            "sortUrl": {
+                "收录日期": "https://if64krpe1pcaivt0.xyz/search/KEY_ctime_PAGE.html",
+                "热度指数": "https://if64krpe1pcaivt0.xyz/search/KEY_click_PAGE.html",
+                "文件大小": "https://if64krpe1pcaivt0.xyz/search/KEY_length_PAGE.html"
+            },
+            "pageParam": "page",
+            "queryKey": "",
+            "method": "get",
+            "parserElementEntity": {
+                "listElement": {
+                    "position": ".row > .col-md-8 >.panel >.panel-body"
+                },
+                "fileName": {
+                    "position": "h5 > a"
+                },
+                "recordTime": {
+                    "position": "table > tbody > tr> td>span>b",
+                    "index": 0
+                },
+                "fileSize": {
+                    "position": "table > tbody > tr> td>span>b",
+                    "index": 1
+                },
+                "fileHot": {
+                    "position": "table > tbody > tr> td>span>b",
+                    "index": 2
+                },
+                "nextUrl": {
+                    "position": "h5 > a",
+                    "index": -1,
+                    "isText": false,
+                    "attrName": "href"
+                },
+                "otherInfo": {}
+            },
+            "nextRequestEntity": {
+                "origin": "https://if64krpe1pcaivt0.xyz",
+                "headers": {
+                    "referer": "url"
+                },
+                "append": "",
+                "parserElementEntity": {
+                    "downloadUrl": {
+                        "position": "#MagnetLink"
+                    }
+                }
+            }
         },
-        "fileNums": {
-          "position": "li > span",
-          "index": 1,
-          "isText": true,
-          "attrName": ""
+        "磁力蜘蛛": {
+            "isRestful": true,
+            "pageStart": 1,
+            "headers": {
+                "referer": "url"
+            },
+            "defaultUrl": "http://www.btmovi.email/so/KEY_rel_PAGE.html",
+            "sortUrl": {
+                "默认": "http://www.btmovi.email/so/KEY_rel_PAGE.html",
+                "时间": "http://www.btmovi.email/so/KEY_time_PAGE.html",
+                "热门": "http://www.btmovi.email/so/KEY_hits_PAGE.html",
+                "大小": "http://www.btmovi.email/so/KEY_size_PAGE.html"
+            },
+            "pageParam": "page",
+            "queryKey": "",
+            "method": "get",
+            "parserElementEntity": {
+                "listElement": {
+                    "position": "#wall .row > .search-list > .search-item"
+                },
+                "fileType": {
+                    "position": ".item-bar > span",
+                    "index": 0
+                },
+                "fileName": {
+                    "position": ".item-title > h3 >a"
+                },
+                "fileSize": {
+                    "position": ".item-bar > span > b",
+                    "index": 1
+                },
+                "recordTime": {
+                    "position": ".item-bar > span > b",
+                    "index": 0
+                },
+                "fileHot": {
+                    "position": ".item-bar > span > b",
+                    "index": 2
+                },
+                "nextUrl": {
+                    "position": ".item-title > h3 > a",
+                    "index": -1,
+                    "isText": false,
+                    "attrName": "href"
+                },
+                "otherInfo": {
+                    "最近下载时间": {
+                        "position": "li > a",
+                        "index": -1,
+                        "isText": true,
+                        "attrName": ""
+                    }
+                }
+            },
+            "nextRequestEntity": {
+                "origin": "http://www.btmovi.email",
+                "headers": {
+                    "referer": "url"
+                },
+                "append": "",
+                "parserElementEntity": {
+                    "downloadUrl": {
+                        "position": "#m_link",
+                        "index": -1,
+                        "isText": false,
+                        "attrName": "value"
+                    }
+                }
+            }
         },
-        "recordTime": {
-          "position": "li > span",
-          "index": 2,
-          "isText": true,
-          "attrName": ""
-        },
-        "fileHot": {
-          "position": "li > span",
-          "index": 3,
-          "isText": true,
-          "attrName": ""
-        },
-        "nextUrl": {
-          "position": "li > a",
-          "index": -1,
-          "isText": false,
-          "attrName": "href"
-        },
-        "otherInfo": {
-          "最近下载时间": {
-            "position": "li > a",
-            "index": -1,
-            "isText": true,
-            "attrName": ""
-          }
+        "磁力天堂": {
+            "isRestful": true,
+            "pageStart": 1,
+            "headers": {
+                "referer": "https://rmhuxl6pg5lz43tv.xyz/"
+            },
+            "defaultUrl": "https://rmhuxl6pg5lz43tv.xyz/search/KEY_ctime_PAGE.html",
+            "sortUrl": {
+                "收录日期": "https://rmhuxl6pg5lz43tv.xyz/search/KEY_ctime_PAGE.html",
+                "热度指数": "https://rmhuxl6pg5lz43tv.xyz/search/search/KEY_click_PAGE.html",
+                "文件大小": "https://rmhuxl6pg5lz43tv.xyz/search/search/KEY_length_PAGE.html"
+            },
+            "pageParam": "page",
+            "queryKey": "",
+            "method": "get",
+            "parserElementEntity": {
+                "listElement": {
+                    "position": ".row > .col-md-8 >.panel"
+                },
+                "fileName": {
+                    "position": ".panel-body > h5 > a"
+                },
+                "recordTime": {
+                    "position": ".panel-body > table > tbody > tr> td>span>b",
+                    "index": 0
+                },
+                "fileSize": {
+                    "position": ".panel-body > table > tbody > tr> td>span>b",
+                    "index": 1
+                },
+                "fileHot": {
+                    "position": ".panel-body > table > tbody > tr> td>span>b",
+                    "index": 2
+                },
+                "nextUrl": {
+                    "position": ".panel-body > h5 > a",
+                    "index": -1,
+                    "isText": false,
+                    "attrName": "href"
+                },
+                "otherInfo": {}
+            },
+            "nextRequestEntity": {
+                "origin": "https://rmhuxl6pg5lz43tv.xyz",
+                "headers": {
+                    "referer": "url"
+                },
+                "append": "",
+                "parserElementEntity": {
+                    "downloadUrl": {
+                        "position": "#MagnetLink"
+                    }
+                }
+            }
         }
-
-      },
-      "nextRequestEntity": {
-        "headers": {
-          "referer": "https://cr.fan55.top/"
-        },
-        "origin": "https://cdn.sofan.one:65533",
-        "append": "?host=cr.fan55.top&v=1",
-        "parserElementEntity": {
-          "downloadUrl": {
-            "position": "#magnet-link",
-            "index": -1,
-            "isText": true,
-            "attrName": ""
-          }
-        }
-      }
-    },
-    "BT联盟": {
-      "pageStart": 1,
-      "headers": {
-        "referer": "https://cdn.btlm.top:65533/?host=cy.btlm.pro&v=1"
-      },
-      "defaultUrl": "https://cdn.btlm.top:65533/s?word=",
-      "sortUrl": {
-        "相关度": "https://cdn.btlm.top:65533/s?word=",
-        "文件大小": "https://cdn.btlm.top:65533/s?sort=size&word=",
-        "收录时间": "https://cdn.btlm.top:65533/s?sort=date&word=",
-        "下载次数": "https://cdn.btlm.top:65533/s?sort=viewnum&word="
-      },
-      "pageParam": "page",
-      "queryKey": "",
-      "queryBody": {
-
-      },
-      "method": "get",
-      "parserElementEntity": {
-        "listElement": {
-          "position": "body .row > .col-md-6 > .list-unstyled"
-        },
-        "fileName": {
-          "position": "li > h2 > a"
-        },
-        "fileSize": {
-          "position": "li > span",
-          "index": 0
-        },
-        "fileNums": {
-          "position": "li > span",
-          "index": 1,
-          "isText": true,
-          "attrName": ""
-        },
-        "recordTime": {
-          "position": "li > span",
-          "index": 2,
-          "isText": true,
-          "attrName": ""
-        },
-        "fileHot": {
-          "position": "li > span",
-          "index": 3,
-          "isText": true,
-          "attrName": ""
-        },
-        "nextUrl": {
-          "position": "li > a",
-          "index": -1,
-          "isText": false,
-          "attrName": "href"
-        },
-        "otherInfo": {
-          "最近下载时间": {
-            "position": "li > a",
-            "index": -1,
-            "isText": true,
-            "attrName": ""
-          }
-        }
-
-      },
-      "nextRequestEntity": {
-        "headers": {
-          "referer": "https://cdn.btlm.top:65533/"
-        },
-        "origin": "https://cdn.btlm.top:65533",
-        "append": "?host=cy.btlm.pro&v=1",
-        "parserElementEntity": {
-          "downloadUrl": {
-            "position": "#magnet-link",
-            "index": -1,
-            "isText": true,
-            "attrName": ""
-          }
-        }
-      }
-    },
-    "磁力蜘蛛": {
-      "isRestful": true,
-      "pageStart": 1,
-      "headers": {
-        "referer": "url"
-      },
-      "defaultUrl": "http://www.btmovi.email/so/KEY_rel_PAGE.html",
-      "sortUrl": {
-        "默认": "http://www.btmovi.email/so/KEY_rel_PAGE.html",
-        "时间": "http://www.btmovi.email/so/KEY_time_PAGE.html",
-        "热门": "http://www.btmovi.email/so/KEY_hits_PAGE.html",
-        "大小": "http://www.btmovi.email/so/KEY_size_PAGE.html"
-      },
-      "pageParam": "page",
-      "queryKey": "",
-      "method": "get",
-      "parserElementEntity": {
-        "listElement": {
-          "position": "#wall .row > .search-list > .search-item"
-        },
-        "fileType": {
-          "position": ".item-bar > span",
-          "index": 0
-        },
-        "fileName": {
-          "position": ".item-title > h3 >a"
-        },
-        "fileSize": {
-          "position": ".item-bar > span > b",
-          "index": 1
-        },
-        "recordTime": {
-          "position": ".item-bar > span > b",
-          "index": 0
-        },
-        "fileHot": {
-          "position": ".item-bar > span > b",
-          "index": 2
-        },
-        "nextUrl": {
-          "position": ".item-title > h3 > a",
-          "index": -1,
-          "isText": false,
-          "attrName": "href"
-        },
-        "otherInfo": {
-          "最近下载时间": {
-            "position": "li > a",
-            "index": -1,
-            "isText": true,
-            "attrName": ""
-          }
-        }
-
-      },
-      "nextRequestEntity": {
-        "origin": "http://www.btmovi.email",
-        "headers": {
-          "referer": "url"
-        },
-        "append": "",
-        "parserElementEntity": {
-          "downloadUrl": {
-            "position": "#m_link",
-            "index": -1,
-            "isText": false,
-            "attrName": "value"
-          }
-        }
-      }
-    },
-    "磁力天堂": {
-      "isRestful": true,
-      "pageStart": 1,
-      "headers": {
-        "referer": "https://rmhuxl6pg5lz43tv.xyz/"
-      },
-      "defaultUrl": "https://rmhuxl6pg5lz43tv.xyz/search/KEY_ctime_PAGE.html",
-      "sortUrl": {
-        "收录日期": "https://rmhuxl6pg5lz43tv.xyz/search/KEY_ctime_PAGE.html",
-        "热度指数": "https://rmhuxl6pg5lz43tv.xyz/search/search/KEY_click_PAGE.html",
-        "文件大小": "https://rmhuxl6pg5lz43tv.xyz/search/search/KEY_length_PAGE.html"
-      },
-      "pageParam": "page",
-      "queryKey": "",
-      "method": "get",
-      "parserElementEntity": {
-        "listElement": {
-          "position": ".row > .col-md-8 >.panel"
-        },
-        "fileName": {
-          "position": ".panel-body > h5 > a"
-        },
-        "recordTime": {
-          "position": ".panel-body > table > tbody > tr> td>span>b",
-          "index": 0
-        },
-        "fileSize": {
-          "position": ".panel-body > table > tbody > tr> td>span>b",
-          "index": 1
-        },
-        "fileHot": {
-          "position": ".panel-body > table > tbody > tr> td>span>b",
-          "index": 2
-        },
-        "nextUrl": {
-          "position": ".panel-body > h5 > a",
-          "index": -1,
-          "isText": false,
-          "attrName": "href"
-        },
-        "otherInfo": {
-        }
-      },
-      "nextRequestEntity": {
-        "origin": "https://rmhuxl6pg5lz43tv.xyz",
-        "headers": {
-          "referer": "url"
-        },
-        "append": "",
-        "parserElementEntity": {
-          "downloadUrl": {
-            "position": "#MagnetLink"
-          }
-        }
-      }
     }
-  }
 }
