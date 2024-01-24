@@ -170,7 +170,7 @@
       "method": "get",
       "parserElementEntity": {
         "listElement": {
-          "position": "body .container-fluid > .row > .col-md-8 > div"
+          "position": "body .row > .col-md-8 > div"
         },
         "fileName": {
           "position": ".panel > .panel-heading > h3 > a",
