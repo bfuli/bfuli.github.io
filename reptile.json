@@ -154,6 +154,67 @@
                 }
             }
         },
+        "天堂磁力": {
+          "pageStart": 1,
+          "headers": {
+            "referer": ""
+          },
+          "defaultUrl": "https://div.ttcl.cc/search?ap=5&key=",
+          "sortUrl": {
+            "文件大小": "https://div.ttcl.cc/search?sort=size&ap=2&key=",
+            "收录时间": "https://div.ttcl.cc/search?sort=date&ap=3&key="
+          },
+          "pageParam": "page",
+          "queryKey": "",
+          "queryBody": {},
+          "method": "get",
+          "parserElementEntity": {
+            "listElement": {
+              "position": "body .container-fluid > .row > .col-md-8 > div"
+            },
+            "fileName": {
+              "position": "a",
+              "isText": true
+            },
+            "fileSize": {
+              "position": ".panel-footer > span",
+              "index": 0
+            },
+            "fileNums": {
+              "position": ".panel-footer > span",
+              "index": 1,
+              "isText": true,
+              "attrName": ""
+            },
+            "recordTime": {
+              "position": ".panel-footer > span",
+              "index": 2,
+              "isText": true,
+              "attrName": ""
+            },
+            "nextUrl": {
+              "position": "a",
+              "index": -1,
+              "isText": false,
+              "attrName": "url"
+            }
+          },
+          "nextRequestEntity": {
+            "headers": {
+              "referer": ""
+            },
+            "origin": "https://div.ttcl.cc",
+            "append": "",
+            "parserElementEntity": {
+              "downloadUrl": {
+                "position": "#magnet",
+                "index": -1,
+                "isText": true,
+                "attrName": ""
+              }
+            }
+          }
+        },
         "滴滴磁力": {
             "isRestful": true,
             "pageStart": 1,
