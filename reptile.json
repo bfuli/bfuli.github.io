@@ -161,6 +161,7 @@
       },
       "defaultUrl": "https://div.ttcl.cc/search?ap=5&key=",
       "sortUrl": {
+        "默认": "https://div.ttcl.cc/search?ap=5&key=",
         "文件大小": "https://div.ttcl.cc/search?sort=size&ap=2&key=",
         "收录时间": "https://div.ttcl.cc/search?sort=date&ap=3&key="
       },
