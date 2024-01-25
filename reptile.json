@@ -197,7 +197,7 @@
           "position": ".panel > .panel-heading > h3 > a",
           "index": -1,
           "isText": false,
-          "attrName": "url"
+          "attrName": "href"
         }
       },
       "nextRequestEntity": {
